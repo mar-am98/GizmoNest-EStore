@@ -33,7 +33,7 @@ async function LinksDropdown() {
 
       <DropdownMenuContent className='w-40' align='start' sideOffset={10}>
         <SignedOut>
-          <DropdownMenuItem>
+          <DropdownMenuItem className='focus:bg-transparent'>
             <SignInButton mode='modal'>
               <Button className='w-full text-left' variant={'default'}>Sign In</Button>
             </SignInButton>
@@ -41,9 +41,9 @@ async function LinksDropdown() {
 
           <DropdownMenuSeparator />
 
-          <DropdownMenuItem>
+          <DropdownMenuItem className='focus:bg-transparent focus:text-dark'>
             <SignUpButton mode='modal'>
-              <Button className='w-full text-left' variant={'outline'}>Sign Up</Button>
+              <Button className='w-full text-left hover:text-white' variant={'outline'}>Sign Up</Button>
             </SignUpButton>
           </DropdownMenuItem>
 
